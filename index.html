@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BREW & BEAN | Crafted with Passion, Served with Love</title>
+<meta name="description" content="BREW & BEAN, coffee shop premium dengan kopi pilihan, barista profesional, dan suasana hangat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="#home" class="logo">BREW <span>&</span> BEAN</a>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menuNav" aria-label="Navigasi utama">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservation">Reservation</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <span class="float f1">☕</span><span class="float f2">🫘</span><span class="float f3">🥐</span>
+  <div class="hero-in">
+    <p class="tag">Crafted with Passion, Served with Love.</p>
+    <h1>BREW &amp; BEAN</h1>
+    <h2>Where Every Cup Tells a Story</h2>
+    <p>Experience carefully crafted coffee, delicious food, and a warm atmosphere made for every moment.</p>
+    <div class="btns"><a class="btn" href="#menu">Explore Our Menu</a><a class="btn ghost" href="#reservation">Book a Table</a></div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <div class="wrap two">
+    <div class="reveal"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=70" alt="Interior BREW & BEAN" loading="lazy"></div>
+    <div class="reveal">
+      <h2 class="title">Our Story</h2>
+      <p>BREW &amp; BEAN adalah coffee shop yang menggabungkan kualitas kopi pilihan, kreativitas barista, dan suasana nyaman untuk menciptakan pengalaman yang berbeda di setiap kunjungan.</p>
+      <div class="stats">
+        <div><b data-n="10">0</b>+<span>Years Experience</span></div>
+        <div><b data-n="25">0</b>+<span>Coffee Variants</span></div>
+        <div><b data-n="50">0</b>K+<span>Happy Customers</span></div>
+        <div><b data-n="15">0</b>+<span>Professional Baristas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="sec alt">
+  <div class="wrap">
+    <h2 class="title center reveal">Our Menu</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter menu">
+      <button class="on" data-f="all">All</button><button data-f="Coffee">Coffee</button><button data-f="Non Coffee">Non Coffee</button><button data-f="Pastry">Pastry</button><button data-f="Food">Food</button>
+    </div>
+    <div class="grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="wrap">
+    <h2 class="title center reveal">Customer Favorites</h2>
+    <div class="grid fav" id="favGrid"></div>
+  </div>
+</section>
+
+<section id="gallery" class="sec">
+  <div class="wrap">
+    <h2 class="title center reveal">Gallery</h2>
+    <div class="gal" id="galGrid"></div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <h2 class="title center reveal">Why Brew &amp; Bean?</h2>
+    <div class="grid why">
+      <article class="card reveal"><i>☕</i><h3>Premium Coffee</h3><p>Menggunakan biji kopi pilihan berkualitas tinggi.</p></article>
+      <article class="card reveal"><i>👨‍🍳</i><h3>Expert Barista</h3><p>Diracik oleh barista profesional.</p></article>
+      <article class="card reveal"><i>🌿</i><h3>Cozy Atmosphere</h3><p>Tempat nyaman untuk bekerja, belajar, dan bersantai.</p></article>
+      <article class="card reveal"><i>❤️</i><h3>Made With Love</h3><p>Setiap minuman dibuat dengan perhatian dan passion.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="reservation" class="sec">
+  <div class="wrap narrow">
+    <h2 class="title center reveal">Reservation</h2>
+    <form id="resForm" class="form glass" novalidate>
+      <label>Nama<input name="nama" type="text" autocomplete="name"><small></small></label>
+      <label>Email<input name="email" type="email" autocomplete="email"><small></small></label>
+      <label>Nomor Telepon<input name="telp" type="tel" autocomplete="tel"><small></small></label>
+      <label>Jumlah Orang<input name="jumlah" type="number" min="1" max="20"><small></small></label>
+      <label>Tanggal<input name="tanggal" type="date"><small></small></label>
+      <label>Waktu<input name="waktu" type="time"><small></small></label>
+      <label class="full">Catatan<textarea name="catatan" rows="3"></textarea></label>
+      <button class="btn full" type="submit">Reserve My Table</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="wrap">
+    <h2 class="title center reveal">What Our Customers Say</h2>
+    <div class="grid tes" id="tesGrid"></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap center">
+    <h2 class="title reveal">Follow Our Coffee Journey</h2>
+    <div class="soc" id="socGrid"></div>
+    <a class="btn" href="https://instagram.com/brewandbean" target="_blank" rel="noopener">Follow @brewandbean</a>
+  </div>
+</section>
+
+<section id="contact" class="sec alt">
+  <div class="wrap two">
+    <div class="reveal">
+      <h2 class="title">Visit Our Coffee Shop</h2>
+      <p>Jl. Contoh No. 123, Indonesia</p>
+      <ul class="info">
+        <li><b>Senin–Jumat</b> 08.00–22.00</li>
+        <li><b>Sabtu–Minggu</b> 07.00–23.00</li>
+        <li><b>Telepon</b> <a href="tel:+620000000000">+62 000 0000 0000</a></li>
+        <li><b>Email</b> <a href="mailto:hello@brewandbean.id">hello@brewandbean.id</a></li>
+      </ul>
+    </div>
+    <div class="map reveal" role="img" aria-label="Placeholder Google Maps">📍 Google Maps Placeholder</div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a href="#home" class="logo">BREW <span>&</span> BEAN</a>
+    <p>Crafted with Passion, Served with Love.</p>
+    <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservation">Reservation</a><a href="#contact">Contact</a></nav>
+    <nav class="social" aria-label="Sosial media"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">WhatsApp</a></nav>
+    <small>© 2026 BREW &amp; BEAN. All Rights Reserved.</small>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Lightbox" hidden><button id="lbX" aria-label="Tutup">×</button><img alt=""></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="top" id="top" aria-label="Kembali ke atas">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
